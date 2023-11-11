@@ -10,6 +10,9 @@ headers = {
 }
 
 try:
+    # Agregar mensaje de "Bloqueo"
+    print("Bloqueo: Realizando solicitud HTTP...")
+
     # Realiza una solicitud HTTP con el encabezado configurado y un tiempo de espera
     response = requests.get(url, headers=headers, timeout=10)  # Espera 10 segundos como máximo
 
@@ -50,4 +53,4 @@ try:
         print("Error al hacer la solicitud HTTP.")
 
 except Exception as e:
-    print("Ocurrió un error durante la solicitud HTTP:", str(e))
+    print("Ocurrió un error durante la solicitud HTTP:", str(e))
